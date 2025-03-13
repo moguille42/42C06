@@ -6,7 +6,7 @@
 /*   By: moguille <moguille@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:59:56 by moguille          #+#    #+#             */
-/*   Updated: 2025/03/12 22:13:03 by moguille         ###   ########.fr       */
+/*   Updated: 2025/03/13 11:40:28 by moguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,22 @@
 
 void	ft_putstr(char *str)
 {
-		int	i;
+	int	i;
 
-		i = 0;
-		while (str[i] != '\0')
-		{
-			write (1, &str[i], 1);
-			i++;
-		}
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write (1, &str[i], 1);
+		i++;
+	}
 }
 
-int	main(int	argc, char	*argv[])
+int	main(int argc, char	*argv[])
 {
 	int	i;
 
-	i = 1;
-	while (i > argc - 1)
+	i = argc - 1;
+	while (i > 0)
 	{
 		ft_putstr(argv[i]);
 		i--;
